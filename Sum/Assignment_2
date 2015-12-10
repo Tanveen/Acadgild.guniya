@@ -1,6 +1,0 @@
-Assume that the integer variable x is 5 and the integer variable y is 10. Give the values of the following expressions:
-
-a. x + y * 2  = 5 + 10 * 2 = 25;
-b. x - y + 2  = 5 - 10 + 2 = -3;
-c. (x+y) * 2  = (5+10) * 2 = 30;
-d. y % x      = 10 % 5     = 0;
