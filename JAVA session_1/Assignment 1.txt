@@ -4,7 +4,9 @@ class Sum
 {
 public static void main(String[] args)
 {
-int a,int b=4,int c;
-System.out.println("the variable b is"+b);
+int a=56;
+float b=0.43;
+int c=a+b;
+System.out.println("the variable b is"+c);
 }
 }
