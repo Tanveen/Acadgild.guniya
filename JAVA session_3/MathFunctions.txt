@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+import java.math.*;;
+public class MathFunctions {
+	
+		public static void main(String[] args)
+		{
+			int num;
+		    double squareroot;
+			double cuberoot;
+			Scanner i = new Scanner(System.in);
+			System.out.println("Enter any number");
+			num= i.nextInt();
+			squareroot = Math.sqrt(num);
+			cuberoot = Math.cbrt(num);
+			System.out.println("square root of the number is:"+squareroot);
+			System.out.println("cube root of the number is:"+cuberoot);
+			
+			
+            
+
+}
+}
