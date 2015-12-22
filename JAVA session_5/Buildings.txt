@@ -1,0 +1,63 @@
+
+class Details{
+	
+String Head;
+int height;
+Details(int side,String h1)
+{
+	height=side;
+	Head=h1;
+}
+void Display()
+{
+	System.out.println("height of building is="+height);
+	System.out.println("Manager of the building is:"+Head);
+}
+}
+class Building1 extends Details{
+	int areacode;
+	String name;
+	Building1(int side,String h1,int Acode,String bname)
+	{
+		super(side,h1);
+		areacode=Acode;
+		name=bname;
+		
+	}
+		void Display()
+		{
+			super.Display();
+			System.out.println("Area code is="+areacode);
+			System.out.println("Name of the Building is:"+name);
+		}
+	}
+	class Building2 extends Details{
+		String name;
+		Building2(int side,String h1,String b2name)
+		{
+			super(side,h1);
+			name=b2name;
+		}
+			void Display()
+			{
+				super.Display();
+				System.out.println("Name of the Building is:"+name);
+		}
+		
+	}
+
+public class Buildings{
+	public static void main(String[] args)
+	{
+		Details d1=new Details(30,"Ram");
+		Building1 b1=new Building1(141,"Shyam",121,"Santacruz");
+		Building2 b2=new Building2(131,"Guniya","Andheri");
+		System.out.println("BUILDING ONE:");
+		b1.Display();
+		System.out.println("BUILDING TWO");
+		b2.Display();
+		//System.out.println("Details are:");
+		//d1.Display();
+		
+	}
+}
