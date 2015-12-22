@@ -1,0 +1,8 @@
+
+public class RevStrngBuff {
+public static void main(String[] args)
+{
+	StringBuffer s1 = new StringBuffer("To reverse the Strings in Java");
+	System.out.println("Reverse is:"+s1.reverse());
+}
+}

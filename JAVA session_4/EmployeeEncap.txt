@@ -1,0 +1,60 @@
+
+ class Employee {
+	private String empname;
+	private int empage;
+	private String designation;
+	private int empssn;
+	private int salary;
+	
+	public String getEmpname() {
+		return empname;
+	}
+	public void setEmpname(String empname) {
+		this.empname = empname;
+	}
+	public int getEmpage() {
+		return empage;
+	}
+	public void setEmpage(int empage) {
+		this.empage = empage;
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+	public int getEmpssn() {
+		return empssn;
+	}
+	public void setEmpssn(int empssn) {
+		this.empssn = empssn;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+}
+	public class EmployeeEncap{
+		public static void main(String[] args)
+		{
+			Employee emp=new Employee();
+			emp.setEmpname("Guniya");
+			emp.setEmpage(25);
+			emp.setDesignation("Java Developer");
+			emp.setSalary(40000);
+			emp.setEmpssn(54676);
+			System.out.println("Name of the employee is:"+emp.getEmpname());
+			System.out.println("Age is:"+emp.getEmpage());
+			System.out.println("Salary is:"+emp.getSalary());
+			System.out.println("Designation is:"+emp.getDesignation());
+			System.out.println("SSN is:"+emp.getEmpssn());
+			
+			
+		}
+		
+	}
+
+

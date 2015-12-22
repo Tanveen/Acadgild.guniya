@@ -1,0 +1,61 @@
+
+class Area{
+int length;
+Area(int side)
+{
+	length=side;
+}
+void Display()
+{
+	System.out.println("Length="+length);
+	
+	
+}
+}
+class Rectangle extends Area{
+	int breadth;
+	Rectangle(int length,int breadth1)
+	{
+		super(length);
+		breadth=breadth1;
+		
+	}
+		void Display()
+		{
+			super.Display();
+			System.out.println("Breadth="+breadth);
+			System.out.println("Area of Rectangle is:"+(length*breadth));
+		}
+	}
+	class Triangle extends Area{
+		int height;
+		Triangle(int length,int height1)
+		{
+			super(length);
+			height=height1;
+		}
+			void Display()
+			{
+				super.Display();
+				System.out.println("Height="+height);
+				System.out.println("Area of Triangle is:"+(length*height/2)) ;
+		}
+		
+	}
+
+public class AreaInherit{
+	public static void main(String[] args)
+	{
+		Area a1 = new Area(30);
+		Rectangle r1= new Rectangle(20,30);
+		Triangle t1=new Triangle(20,2);
+		System.out.println("RECTANGLE :");
+		r1.Display();
+		System.out.println("TRIANGLE :");
+		t1.Display();
+		System.out.println("AREA:");
+		a1.Display();
+		
+		
+	}
+}
