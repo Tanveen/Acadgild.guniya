@@ -1,0 +1,24 @@
+
+class calculate
+{
+	int side1;
+	int side2;
+	calculate(int length)
+	{
+		side1=length;
+		System.out.println("Area of square ="+(2*side1));
+	}
+	calculate(int length,int breadth)
+	{
+		side1=length;
+		side2=breadth;
+		System.out.println("Area of Rectangle ="+(side1*side2));
+	}
+}
+	public class ConsOverloadArea {
+
+                  public static void main(String[] args){
+                	 calculate cl=new calculate(12);
+                	 calculate c2=new calculate(12,14);
+                  }
+}

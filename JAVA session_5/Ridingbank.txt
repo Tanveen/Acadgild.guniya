@@ -1,0 +1,43 @@
+class bank
+{
+	void getRateofInterest()
+	{
+		System.out.println("some percent");
+	}
+}
+class SBI extends bank
+{
+	void getRateOfInterest()
+	{
+		System.out.println("SBI rate is 4.5%");
+	}
+}
+class ICICI extends bank
+{
+	void getRateOfInterest()
+	{
+		System.out.println("ICICI rate is 8%");
+	}
+}
+class Overseas extends bank
+{
+	void getRateOfInterest()
+	{
+		System.out.println("OVERSEAS rate id 7.5%");
+	}
+}
+public class Ridingbank {
+public static void main(String[] args)
+{
+	bank b1= new SBI();
+	b1.getRateofInterest();
+	b1= new ICICI();
+	b1.getRateofInterest();
+	b1= new Overseas();
+	b1.getRateofInterest();
+
+}
+
+
+	
+}
