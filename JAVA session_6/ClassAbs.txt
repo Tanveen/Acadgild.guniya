@@ -1,0 +1,54 @@
+abstract class Instrument
+{
+	String field;
+	abstract void Play();		
+}
+class StringedInstrument extends Instrument
+{
+	int numberOfStrings=0;
+	StringedInstrument()
+	{
+		field="junk";
+	}
+	public void Play()
+	{
+		System.out.println("Number of Strings are:"+numberOfStrings + " " + "Play field --"+field);		
+	}
+}
+class ElectricGuitar extends StringedInstrument
+{
+	ElectricGuitar()
+	{
+		numberOfStrings=10;
+		field="magnetic";
+	}
+	public void Play()
+	{
+		System.out.println("Number of Strings are:"+numberOfStrings + " " + "Play field --"+field);		
+	}
+}
+class ElectricBassGuitar extends StringedInstrument
+{
+	ElectricBassGuitar()
+	{
+		numberOfStrings=20;
+		field="bass";
+	}
+	public void Play()
+	{
+		System.out.println("Number of Strings are:"+numberOfStrings + " " + "Play field --"+field);		
+	}
+}
+public class ClassAbs  {
+	public static void main(String[] args)
+	{
+		Instrument i1 = new ElectricGuitar();
+		Instrument i2 = new ElectricBassGuitar();
+		Instrument i3 = new StringedInstrument();
+		i1.Play();
+		i2.Play();
+		i3.Play();
+		
+	}
+
+}
