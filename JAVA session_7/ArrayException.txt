@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class ArrayException {
+        public static void main(String[] args)
+{
+	int ArrayOne[]=new int[5];
+	
+	Scanner sn=new Scanner(System.in);
+	System.out.println("Enter the five elements for an array");
+	for(int i=0;i<5;i++)
+	{
+	ArrayOne[i]=sn.nextInt();
+	}
+	try
+	{
+		System.out.println("enter the element index[0-4] you want to see");
+		Scanner s =new Scanner(System.in);
+		int index= s.nextInt();
+		System.out.println("The element you want to see is:"+ArrayOne[index]);
+		
+	}
+	catch(ArrayIndexOutOfBoundsException e)
+	{
+		System.out.println("There are only 5 elements in an array");
+	}
+	
+}
+}
+

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class NumberException {
+public static void main(String[] args)
+{
+	int Numb1;
+	System.out.println("Enter any Integer");
+	Scanner n1=new Scanner(System.in);
+	try
+	{
+		Numb1=Integer.parseInt(n1.next());
+	}
+catch(NumberFormatException e)
+{
+	System.out.println("This is not an Integer");
+	System.out.println("The Exception Raised here is:"+e);
+}
+}
+}

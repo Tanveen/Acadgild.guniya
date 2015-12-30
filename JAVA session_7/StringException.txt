@@ -1,0 +1,21 @@
+public class StringException {
+	private static String str1;
+	public static void main(String[] args)
+	{
+		str1="Showing String Exception";
+		int length=str1.length();
+		System.out.println("THE STRING IS-->"+str1);
+		System.out.println("The length of the string is:"+length);
+		try
+		{
+			System.out.println("Trying to show the character out of index");
+			char ch=str1.charAt(400);
+			System.out.println("the character is:"+ch);
+		}
+		catch(StringIndexOutOfBoundsException e)
+		{
+			System.out.println("Character is not in the range");
+			System.out.println("This caused the exception which is:"+e);
+		}
+	}
+}
