@@ -1,10 +1,10 @@
-Declare three integer variables (a,b,c) in a single declaration and simultaneously initialize b to 4. 
 
-class Variable
-{
+public class Variable {
+	
 public static void main(String[] args)
 {
-int a,int b=4,int c;
-System.out.println(+b);
+	@SuppressWarnings("unused")
+	int a,c,int b=4;
+	System.out.println("variable initialized is b=:"+b);
 }
 }
