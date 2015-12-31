@@ -1,4 +1,5 @@
 Give two examples of data that cannot be stored in a variable of type int. 
 
 1.tanveen
-2.guniya
+2.false
+3.true
